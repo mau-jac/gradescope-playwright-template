@@ -1,0 +1,14 @@
+{
+  "name": "source",
+  "version": "1.0.0",
+  "description": "Testing suite for UI course using Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "author": "Mauricio Buschinelli",
+  "license": "ISC",
+  "devDependencies": {
+    "playwright-firefox": "^1.10.0"
+  }
+}

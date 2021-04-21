@@ -1,0 +1,20 @@
+#! /bin/bash
+
+# Setup directories
+STUDENT=$PWD/submission
+BASE=$PWD/source
+
+# Copy student submission to node base dir
+if [[ -d $STUDENT ]]
+then
+    cp -r $STUDENT/* $BASE
+else
+    echo "No $STUDENT directory."
+fi
+
+cd $BASE
+
+
+
+# Start tests
+npm run test

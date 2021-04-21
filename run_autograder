@@ -7,7 +7,7 @@ BASE=$PWD/source
 # Copy student submission to node base dir
 if [[ -d $STUDENT ]]
 then
-    cp -r $STUDENT/* $BASE
+    cp -r $STUDENT $BASE/
 else
     echo "No $STUDENT directory."
 fi

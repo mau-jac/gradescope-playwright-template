@@ -12,9 +12,13 @@ else
     echo "No $STUDENT directory."
 fi
 
+# Start python server in the root of the website submission
+cd $BASE/submission
+python3 -m http.server &
 cd $BASE
-
-
 
 # Start tests
 npm run test
+
+# Kill only the python server
+kill -15 $(pgrep -f 'python3 -m http.server')
